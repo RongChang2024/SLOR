@@ -3,10 +3,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Subset
-from dataset_12_info import CrohnsDataset
+from dataset import CrohnsDataset
 from torchvision import transforms
 from preprocess import preprocess_data
-from model_info import aap, feature_max, CombinedModel
+from model import aap, feature_max, CombinedModel
 import os
 from sklearn.metrics import accuracy_score, roc_auc_score, precision_score, recall_score, f1_score
 import logging
